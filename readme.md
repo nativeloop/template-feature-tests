@@ -1,3 +1,3 @@
-# @nativeloop/template-default
+# @nativeloop/template-feature-tests
 
->default template for use with {nativeloop} mobile apps
+>mobile app template used for testing features

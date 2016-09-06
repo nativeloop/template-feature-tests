@@ -1,6 +1,6 @@
 {
   "name": "@nativeloop/template-feature-tests",
-  "version": "0.0.0-beta.3",
+  "version": "0.0.0-beta.4",
   "description": "Feature tests template for {nativeloop} mobile apps",
   "author": {
     "name": "Brenton House",
