@@ -1,0 +1,37 @@
+{
+  "name": "@nativeloop/template-feature-tests",
+  "version": "0.0.0-beta.3",
+  "description": "Feature tests template for {nativeloop} mobile apps",
+  "author": {
+    "name": "Brenton House",
+    "email": "brenton.house@gmail.com",
+    "url": "https://github.com/brentonhouse"
+  },
+  "homepage": "git://github.com/nativeloop/template-feature-tests",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nativeloop/template-feature-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nativeloop/template-feature-tests/issues",
+    "email": "support@nativeloop.com"
+  },
+  "scripts": {
+    "add": "git add -A",
+    "preadd-version": "npm run add",
+    "add-version": "node npm-scripts/version",
+    "push": "npm run commit --",
+    "commit": "npm run add-version --",
+    "postpush": "git push && git push --tags",
+    "test": "clear && tn iphone-6s --log-level trace --liveview",
+    "build": "clear && alloy compile --platform ios"
+  },
+  "devDependencies": {
+    "lodash": "^4.15.0",
+    "semver": "^5.3.0"
+  },
+  "keywords": [
+    "nativeloop"
+  ],
+  "license": "MIT"
+}

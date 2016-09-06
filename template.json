@@ -1,0 +1,25 @@
+{
+  "name": "${name}",
+  "version": "1.0.0-beta.0",
+  "description": "${description}",
+  "main": "index.js",
+  "scripts": {
+    "add": "git add -A",
+    "preadd-version": "npm run add",
+    "add-version": "node npm-scripts/version",
+    "push": "npm run commit --",
+    "commit": "npm run add-version --",
+    "postpush": "git push && git push --tags",
+    "test": "clear && tn iphone-6s --log-level trace --liveview",
+    "build": "clear && alloy compile --platform ios"
+  },
+  "devDependencies": {
+    "lodash": "^4.15.0",
+    "semver": "^5.3.0"
+  },
+  "keywords": [
+    "nativeloop"
+  ],
+  "author": "${publisher}",
+  "license": "MIT"
+}
